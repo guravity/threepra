@@ -4,7 +4,6 @@ import { OrbitControls } from "../jsm/controls/OrbitControls.js";
 import GUI from 'https://cdn.jsdelivr.net/npm/lil-gui@0.17/+esm';
 
 let scene, camera, renderer, light, controls; // グローバル変数
-const clock = new THREE.Clock();
 const gui = new GUI()
 
 window.addEventListener("load", init)
@@ -75,8 +74,6 @@ function onWindowResize() {
 }
 
 function animate() {
-    const elapsedTime = clock.getElapsedTime();
-
     controls.update();
 
     //レンダリング
