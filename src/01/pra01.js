@@ -1,4 +1,5 @@
-import * as THREE from "three";
+// import * as THREE from "three";
+import * as THREE from "../build/three.module.js"
 import { OrbitControls } from "../jsm/controls/OrbitControls.js";
 
 let scene, camera, renderer, pointLight, controls; // グローバル変数
@@ -54,7 +55,7 @@ function init() {
     
     let dirLight2 = new THREE.DirectionalLight(0x0000ff, 1)
     dirLight2.position.set(0, 0, 1)
-    
+
     scene.add(dirLight2)
     */
 
